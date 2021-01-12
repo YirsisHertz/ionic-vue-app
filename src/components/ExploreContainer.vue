@@ -1,28 +1,22 @@
 <template>
   <div id="container">
-    <strong>{{ name }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h1>Post's</h1>
+    <hr />
+    <container />
   </div>
 </template>
 
 <script lang="ts">
-
+import Container from "./Container.vue";
 export default {
-  name: 'ExploreContainer',
-  props: {
-    name: String
-  }
-}
+  components: { Container },
+  name: "ExploreContainer",
+};
 </script>
 
 <style scoped>
 #container {
   text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #container strong {
